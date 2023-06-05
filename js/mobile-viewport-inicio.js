@@ -6,6 +6,4 @@ export default function mobileViewportInicio(){
  
     // Configura o valor em --vh na raiz do documento
     inicio.style.setProperty('--vh', `${vh}px`);
-
-    console.log('funcionando, viu');
 };
