@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("funcionando, viu")})();
+(()=>{"use strict";var e,n;e=document.getElementById("inicio"),n=.01*window.innerHeight,e.style.setProperty("--vh","".concat(n,"px")),console.log("funcionando, viu")})();
