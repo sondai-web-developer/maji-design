@@ -1,0 +1,28 @@
+{
+  "name": "maji-design",
+  "version": "1.0.0",
+  "description": "Website de um estúdio de design que trabalha com identidades visuais, websites, materiais de mídias sociais, impressos e editoriais.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sondai-web-developer/maji-design.git"
+  },
+  "author": "Maji Design",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sondai-web-developer/maji-design/issues"
+  },
+  "homepage": "https://github.com/sondai-web-developer/maji-design#readme",
+  "devDependencies": {
+    "@babel/core": "^7.22.1",
+    "@babel/plugin-transform-runtime": "^7.22.4",
+    "@babel/preset-env": "^7.22.4",
+    "babel-loader": "^9.1.2",
+    "webpack": "^5.85.0",
+    "webpack-cli": "^5.1.2"
+  }
+}
