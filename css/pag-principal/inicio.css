@@ -3,7 +3,7 @@
 	background-size: cover;
     padding-top:130px;
     height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
+    /*height: calc(var(--vh, 1vh) * 100);*/
 }
 
 #logo_inicio{
@@ -11,7 +11,7 @@
 }
 
 #txt_inicio{
-    background: blueviolet;
+    background: brown;
     margin:35px auto 0 auto;
     text-align: center;
     max-width: 345px;
