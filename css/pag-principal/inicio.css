@@ -1,10 +1,10 @@
 #inicio{
     background: url('../../imgs/imgs-pag-principal/mobile_bg_inicio.png') no-repeat center;
 	background-size: cover;
-    padding:130px 0 100px 0;
+    padding:160px 0 100px 0;
 }
 
-#bg_inicio{
+#logo_inicio{
     margin:0 auto;
 }
 
