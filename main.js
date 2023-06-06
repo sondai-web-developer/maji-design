@@ -1,1 +1,1 @@
-(()=>{"use strict";var e,t;e=document.getElementById("inicio"),t=.01*window.innerHeight,e.style.setProperty("--vh","".concat(t,"px"))})();
+(()=>{"use strict";var e,t,n,o;e=document.getElementById("inicio"),t=.01*window.innerHeight,e.style.setProperty("--vh","".concat(t,"px")),n=document.querySelector('[data-mobile-menu="icone"]'),o=document.querySelector('[data-mobile-menu="lista"]'),n.addEventListener("click",(function(){n.classList.toggle("transformarIcone"),o.classList.toggle("mostrarItensMenu")}))})();
