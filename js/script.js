@@ -1,3 +1,5 @@
-import mobileViewportInicio from './mobile-viewport-inicio.js';
+import mobileViewportInicio from './funcoes/mobile-viewport-inicio.js';
+import menu from './funcoes/menu.js';
 
 mobileViewportInicio();
+menu();
