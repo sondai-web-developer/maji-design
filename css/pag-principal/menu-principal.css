@@ -14,7 +14,7 @@
 
 #barra::after{
     content: '';
-    display: block;
+    display: none;
     width: 92%;
     height: 1px;
     background: #04BFBF;
@@ -22,6 +22,8 @@
 }
 
 #logo{
+    position: relative;
+    top:-1000px;
     width:60px;
     margin: 0 auto;
 }
