@@ -14,4 +14,5 @@ export default function viewportHeightInicio(){
     const debouncedViewportAjuste = debounce( viewportAjuste, 200);
 
     window.addEventListener('resize', debouncedViewportAjuste);
+    document.addEventListener('DOMContentLoaded', viewportAjuste);
 };
