@@ -22,7 +22,7 @@
 
 @media (min-width: 400px) {
     #inicio {
-        background: url('../../imgs/imgs-pag-principal/tablet_bg_inicio.jpg') no-repeat center;
+        background: url('../../imgs/imgs-pag-principal/inicio/tablet_bg_inicio.jpg') no-repeat center;
         background-size: cover;
     }
 }
@@ -39,7 +39,7 @@
 
 @media (min-width:1000px) {
     #inicio {
-        background: url(../../imgs/imgs-pag-principal/desktop_bg_inicio.jpg) no-repeat center;
+        background: url(../../imgs/imgs-pag-principal/inicio/desktop_bg_inicio.jpg) no-repeat center;
         background-size: cover;
         padding-top: 145px;
     }
