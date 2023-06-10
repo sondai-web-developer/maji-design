@@ -12,19 +12,19 @@
     padding-top:6px;
     padding-right:10px;
     padding-left:10px;
+    background: rgba(0, 0, 0, 0.3);
+    top:-500px;
 }
 
 #barra::after{
     content: '';
-    display: none;
+    display: block;
     height: 1px;
     background: #04BFBF;
     margin: 5px auto 0 auto;
 }
 
 #logo{
-    position: relative;
-    top:-1000px;
     width:60px;
     margin: 0 auto;
 }
@@ -66,6 +66,8 @@
 }
 
 #mobile_icon_menu {
+    position: relative;
+    z-index: 1000;
     display: block;
     width: 26px;
     height: 26px;
