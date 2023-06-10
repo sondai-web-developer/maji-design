@@ -1,7 +1,7 @@
 import debounce from './debounce.js';
 
 export default function viewportHeightInicio(){
-    const inicio = document.getElementById('inicio');
+    const inicio = document.querySelector('[data-sessao="inicio"]');
 
     function viewportAjuste(){
         // Altura da viewport multiplicada por 1% para obter um valor para vh
