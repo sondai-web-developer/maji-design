@@ -13,8 +13,8 @@ export default function simboloInicio() {
     }
   }
 
-  /*const debouncedMudarSimbolo = debounce(mudarSimbolo, 200);*/
+  const debouncedMudarSimbolo = debounce(mudarSimbolo, 200);
 
-  /*window.addEventListener('resize', debouncedMudarSimbolo);*/
+  window.addEventListener('resize', debouncedMudarSimbolo);
   document.addEventListener('DOMContentLoaded', mudarSimbolo);
 }
