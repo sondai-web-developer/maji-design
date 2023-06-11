@@ -9,7 +9,7 @@
 }
 
 .item_servicos {
-    max-width: 307x;
+    max-width: 307px;
 }
 
 .item_servicos>img {
@@ -40,7 +40,7 @@
 @media (min-width:628px) {
     .item_servicos {
         max-width: 260px;
-        margin: 0 5px;
+        margin: 0 15px;
     }
 
     .item_servicos:nth-child(2) {
@@ -50,7 +50,8 @@
 
 @media (min-width:1000px) {
     .item_servicos {
-        max-width: 307px;
+        max-width: 300px;
+        margin: 0 10px;
     }
 
     .item_servicos:nth-child(3) {
