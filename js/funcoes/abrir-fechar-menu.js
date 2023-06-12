@@ -1,11 +1,11 @@
 import clickOutside from "./clickoutside";
 
-export default function menu() {
+export default function abrirFecharMenu() {
   const iconeMenuMobile = document.querySelector('[data-mobile-menu="icone"]');
   const menuNav = document.querySelector('[data-mobile-menu="lista"]');
   const eventos = ['touchstart', 'click'];
 
-  function abrirFecharMenu(event) {
+  function abrirFechar(event) {
     event.preventDefault();
     this.classList.add('transformarIcone');
     menuNav.classList.add('mostrarItensMenu');
@@ -16,7 +16,7 @@ export default function menu() {
   }
 
   eventos.forEach((evento) => {
-    iconeMenuMobile.addEventListener(evento, abrirFecharMenu);
+    iconeMenuMobile.addEventListener(evento, abrirFechar);
   });
 
 }
