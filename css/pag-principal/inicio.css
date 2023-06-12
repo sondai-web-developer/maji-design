@@ -1,7 +1,7 @@
 #inicio {
     background: url('../../imgs/imgs-pag-principal/inicio/mobile_bg_inicio.jpg') no-repeat center;
     background-size: cover;
-    padding-top: 210px;
+    padding-top: 190px;
     height: 649px;
 }
 
@@ -10,7 +10,7 @@
 }
 
 #txt_inicio {
-    margin: 35px auto 0 auto;
+    margin: 60px auto 0 auto;
     text-align: center;
     max-width: 345px;
     font-size: 16px;
@@ -36,6 +36,6 @@
     #inicio {
         background: url(../../imgs/imgs-pag-principal/inicio/desktop_bg_inicio.jpg) no-repeat center;
         background-size: cover;
-        padding-top: 220px;
+        padding-top: 200px;
     }
 }
