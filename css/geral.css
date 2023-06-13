@@ -1,0 +1,35 @@
+#grid_geral{
+    display: grid;
+    grid-template-columns: 10px 1fr 10px;
+}
+
+@media (min-width:628px){
+    #grid_geral{
+        grid-template-columns: 30px 1fr 30px;
+    }
+}
+
+@media (min-width:1000px){
+    #grid_geral{
+        grid-template-columns: 183px 1fr 183px;
+    }
+}
+
+#servicos{
+    padding:100px 0 60px 0;
+}
+
+#inicio{
+    grid-column: 1 / -1;
+}
+
+#servicos{
+    grid-column: 2;
+}
+
+.titulo_sessao{
+    font-size:28px;
+    font-weight:700;
+    padding-bottom:40px;
+    color: #013A40;
+}
