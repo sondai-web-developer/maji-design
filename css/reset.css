@@ -1,6 +1,6 @@
 /*Reset*/
 
-body, h1, h2, ul, li, p, a{
+body, h1, h2, h3, ul, li, p, a{
     padding:0px;
     margin:0px;
 }
@@ -23,7 +23,7 @@ ul{
     box-sizing: border-box;
 }
 
-h1, h2{
+h1, h2, h3{
     font-family: 'Quicksand', sans-serif;
 }
 
