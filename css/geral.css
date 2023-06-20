@@ -15,11 +15,11 @@
     }
 }
 
-#servicos{
+#servicos, #portfolio{
     padding:100px 0 60px 0;
 }
 
-#inicio{
+#inicio, #portfolio{
     grid-column: 1 / -1;
 }
 
@@ -30,6 +30,6 @@
 .titulo_sessao{
     font-size:28px;
     font-weight:700;
-    padding-bottom:40px;
+    margin-bottom:40px;
     color: #013A40;
 }
