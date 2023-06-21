@@ -1,25 +1,25 @@
-#grid_geral{
+#grid_geral, #portfolio, #contatos, #rodape{
     display: grid;
     grid-template-columns: 10px 1fr 10px;
 }
 
 @media (min-width:628px){
-    #grid_geral{
+    #grid_geral, #portfolio, #contatos, #rodape{
         grid-template-columns: 30px 1fr 30px;
     }
 }
 
 @media (min-width:1000px){
-    #grid_geral{
+    #grid_geral, #portfolio, #contatos, #rodape{
         grid-template-columns: 183px 1fr 183px;
     }
 }
 
-#servicos, #portfolio, #sobre_maji{
+#servicos, #portfolio, #sobre_maji, #contatos{
     padding:100px 0 60px 0;
 }
 
-#inicio, #portfolio{
+#inicio, #portfolio, #contatos, #rodape{
     grid-column: 1 / -1;
 }
 
