@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
   padding:6px 10px 0px 10px;
+  z-index: 1500;
 }
 
 #logo{
