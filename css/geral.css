@@ -15,7 +15,7 @@
     }
 }
 
-#servicos, #portfolio{
+#servicos, #portfolio, #sobre_maji{
     padding:100px 0 60px 0;
 }
 
@@ -23,7 +23,7 @@
     grid-column: 1 / -1;
 }
 
-#servicos{
+#servicos, #sobre_maji{
     grid-column: 2;
 }
 
@@ -32,4 +32,12 @@
     font-weight:700;
     margin-bottom:40px;
     color: #013A40;
+}
+
+h1, h2, h3{
+    font-family: 'Quicksand', sans-serif;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
 }
