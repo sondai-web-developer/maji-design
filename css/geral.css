@@ -1,16 +1,16 @@
-#grid_geral, #portfolio, #contatos, #rodape{
+#grid_geral, #portfolio, #rodape{
     display: grid;
     grid-template-columns: 10px 1fr 10px;
 }
 
 @media (min-width:628px){
-    #grid_geral, #portfolio, #contatos, #rodape{
+    #grid_geral, #portfolio, #rodape{
         grid-template-columns: 30px 1fr 30px;
     }
 }
 
 @media (min-width:1000px){
-    #grid_geral, #portfolio, #contatos, #rodape{
+    #grid_geral, #portfolio, #rodape{
         grid-template-columns: 183px 1fr 183px;
     }
 }
@@ -19,7 +19,7 @@
     padding:100px 0 60px 0;
 }
 
-#inicio, #portfolio, #contatos, #rodape{
+#inicio, #portfolio, #rodape{
     grid-column: 1 / -1;
 }
 

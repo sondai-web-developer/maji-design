@@ -1,5 +1,8 @@
 #contatos{
-    background:#025959;
+    grid-column:1/-1;
+    display: grid;
+    grid-template-columns: 10px 1fr 10px;
+    background:#013A40;
 }
 
 #contatos>h1 {
@@ -7,11 +10,11 @@
     color: #FFF9F1;
 }
 
-#infos_contatos {
+#infos_contatos_col_1 {
     grid-column: 2;
 }
 
-#infos_contatos>h2{
+#infos_contatos_col_1>h2{
     color: #FFF9F1;
     font-family: 'Roboto', sans-serif;
     font-size: 21px;
@@ -20,18 +23,18 @@
     margin-bottom: 40px;
 }
 
-#infos_contatos>ul>li>img{
+#infos_contatos_col_1>ul>li>img{
     width:32px;
     height:32px;
 }
 
-#infos_contatos>ul>li>span{
+#infos_contatos_col_1>ul>li>span{
     display: flex;
     width:100%;
     align-items: center;
 }
 
-#infos_contatos>ul>li>span>a{
+#infos_contatos_col_1>ul>li>span>a{
     color:#F29727;
     font-family: 'Roboto', sans-serif;
     font-size: 21px;
@@ -42,29 +45,77 @@
     padding: 5px 0;
 }
 
-#infos_contatos>ul>li{
+#infos_contatos_col_1>ul>li{
     display: flex;
 }
 
-#infos_contatos>ul>li+li{
+#infos_contatos_col_1>ul>li+li{
     margin-top: 20px;
 }
 
-#infos_contatos>ul>li>span:before{
+#infos_contatos_col_1>ul>li>span:before{
     content:'';
     display: block;
-    background:#018888;
+    background:#025959;
     width:1px;
     height: 100%;
     margin: 0 15px;
 }
 
-#infos_contatos>ul>li>span:after{
+#infos_contatos_col_1>ul>li>span:after{
     content:'';
     display: block;
-    background:#018888;
+    background:#025959;
     flex-grow:1;
     width:100%;
     height: 1px;
     margin-left: 15px;
+}
+
+#infos_contatos_col_2{
+    display: none;
+}
+
+@media (min-width:628px){
+    #contatos{
+        grid-template-columns: 30px repeat(2, 1fr) 30px;
+    }
+    
+    #infos_contatos_col_1{
+        margin-right: 10px;
+    }
+
+    #infos_contatos_col_2{
+        grid-column: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-left: 10px;
+    }
+
+    #infos_contatos_col_2>h2{
+        color: #FFF9F1;
+        font-family: 'Roboto', sans-serif;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 40px;
+        text-align: right;
+    }
+
+    #infos_contatos_col_2>img{
+        width:160px;
+        height:160px;
+    }
+}
+
+@media (min-width:1000px){
+    #contatos{
+        grid-template-columns: 183px repeat(2, 1fr) 183px;
+    }
+    
+    #infos_contatos_col_2>img{
+        width:200px;
+        height:200px;
+    }
 }
