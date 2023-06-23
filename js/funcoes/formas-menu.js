@@ -21,7 +21,7 @@ export default function formasMenu() {
             logo.classList.remove('mostrarElementosMenu');
         }
 
-        if(window.innerWidth >= 800 && sessaoServicoTopo <= 0){
+        if(window.innerWidth >= 628 && sessaoServicoTopo <= 0){
             menuNavUl.style.justifyContent = 'flex-end';
             linksInternos.forEach((link) => {
                 link.style.color = '#04BFBF';

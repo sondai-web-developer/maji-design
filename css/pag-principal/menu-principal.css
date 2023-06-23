@@ -149,7 +149,7 @@
   animation: mostrar 0.3s forwards;
 }
 
-@media (min-width:800px){
+@media (min-width:628px){
   #mobile_icon_menu{
     display: none;
   }
@@ -186,7 +186,7 @@
 
   #menu_nav ul li + li{
     margin-top:0px;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   #menu_nav ul li a {
@@ -233,7 +233,7 @@
   background:#FFF9F1;
 }
 
-@media (min-width:800px){
+@media (min-width:628px){
   #menu_nav ul li a.destacar::before,
   #menu_nav ul li a.destacar::after{
     background: #04BFBF;
