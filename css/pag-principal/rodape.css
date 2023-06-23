@@ -1,6 +1,10 @@
 #rodape{
-    padding: 40px 0;
+    padding: 25px 0;
     background:#013A40;
+}
+
+#rodape>img{
+    cursor: pointer;
 }
 
 #rodape>img, #rodape>p{
