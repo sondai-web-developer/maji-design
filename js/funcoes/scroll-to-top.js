@@ -1,5 +1,5 @@
 export default function scrollToTop() {
-    const logo = document.querySelector('[data-scroll-to-top="logo"]');
+    const logos = document.querySelectorAll('[data-scroll-to-top="logo"]');
     const eventos = ['touchstart', 'click'];
 
     function scrollTop(event) {
@@ -11,6 +11,8 @@ export default function scrollToTop() {
     }
 
     eventos.forEach((evento) => {
-        logo.addEventListener(evento, scrollTop);
+        logos.forEach(logo => {
+            logo.addEventListener(evento, scrollTop);
+        });
     });
 }
