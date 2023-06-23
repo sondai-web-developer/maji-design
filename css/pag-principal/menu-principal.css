@@ -236,6 +236,6 @@
 @media (min-width:628px){
   #menu_nav ul li a.destacar::before,
   #menu_nav ul li a.destacar::after{
-    background: #04BFBF;
+    background: #025959;
   }
 }

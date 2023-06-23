@@ -1,3 +1,7 @@
+#grid_geral{
+    background: #FFF9F1;
+}
+
 #grid_geral, #portfolio, #rodape{
     display: grid;
     grid-template-columns: 10px 1fr 10px;

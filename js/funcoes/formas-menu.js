@@ -4,14 +4,13 @@ export default function formasMenu() {
     const separador = document.querySelector('[data-separador-menu]');
     const logo = document.querySelector('[data-scroll-to-top="logo"]');
     const sessaoServico = document.querySelector('[data-sessao]');
-    const sessaoContatos = document.querySelector('[id="contatos"]');
     const menuNavUl = document.querySelector('[data-mobile-menu="lista"] ul');
     const linksInternos = document.querySelectorAll('[data-mobile-menu="lista"] a');
+    const menuPrincipal = document.querySelector('[data-menu-principal]');
     const eventos = ['scroll', 'resize'];
     
     function formas() {
         const sessaoServicoTopo = sessaoServico.getBoundingClientRect().top;
-        const scrollTop = document.documentElement.scrollTop;
 
         if (sessaoServicoTopo <= 0) {
             separador.classList.add('mostrarElementosMenu');
@@ -24,15 +23,17 @@ export default function formasMenu() {
         if(window.innerWidth >= 628 && sessaoServicoTopo <= 0){
             menuNavUl.style.justifyContent = 'flex-end';
             linksInternos.forEach((link) => {
-                link.style.color = '#04BFBF';
+                link.style.color = '#025959';
                 link.style.fontWeight = '600';
             });
+            menuPrincipal.style.background = '#FFF9F1';
         } else {
             menuNavUl.style.justifyContent = 'center';
             linksInternos.forEach((link) => {
                 link.style.color = '#FFF9F1';
                 link.style.fontWeight = '400';
             });
+            menuPrincipal.style.background = 'transparent';
         }
     }
 
