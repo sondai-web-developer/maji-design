@@ -1,5 +1,6 @@
-export default function scrollSuave() {
-    const linksInternos = document.querySelectorAll('[data-mobile-menu="lista"] a');
+export default function scrollSuaveToContatos(){
+    const itemContatos = document.querySelector('[data-menu-item="contatos"]');
+
     const eventos = ['touchstart', 'click'];
 
     function scrollToSection(event) {
@@ -16,18 +17,15 @@ export default function scrollSuave() {
 
     function addLinksEvents(){
         eventos.forEach(evento => {
-            linksInternos.forEach((link) => {
-                link.addEventListener(evento, scrollToSection);
-            });
+                itemContatos.addEventListener(evento, scrollToSection);
         });
     }
 
     function init(){
-        if(linksInternos.length){
+        if(itemContatos){
             addLinksEvents();
         }
     }
 
     init();
-
 }

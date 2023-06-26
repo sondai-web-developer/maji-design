@@ -1,33 +1,33 @@
-#grid_geral{
+.grid_geral{
     background: #FFF9F1;
 }
 
-#grid_geral, #portfolio, #rodape{
+.grid_geral, #intro-portfolio, #rodape, #portfolio{
     display: grid;
     grid-template-columns: 10px 1fr 10px;
 }
 
 @media (min-width:628px){
-    #grid_geral, #portfolio, #rodape{
+    .grid_geral, #intro-portfolio, #rodape, #portfolio{
         grid-template-columns: 30px 1fr 30px;
     }
 }
 
 @media (min-width:1000px){
-    #grid_geral, #portfolio, #rodape{
+    .grid_geral, #intro-portfolio, #rodape, #portfolio{
         grid-template-columns: 183px 1fr 183px;
     }
 }
 
-#servicos, #portfolio, #sobre_maji, #contatos{
+#servicos, #intro-portfolio, #sobre_maji, #contatos, #portfolio{
     padding:100px 0 60px 0;
 }
 
-#inicio, #portfolio, #rodape{
+#inicio, #intro-portfolio, #rodape{
     grid-column: 1 / -1;
 }
 
-#servicos, #sobre_maji{
+#servicos, #sobre_maji, #portfolio{
     grid-column: 2;
 }
 

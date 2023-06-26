@@ -58,7 +58,7 @@
     </link>
 </head>
 
-<body id="grid_geral">
+<body class="grid_geral">
 
     <!--Menu-->
     <header id="menu_principal" data-menu-principal>
@@ -67,12 +67,12 @@
 
         <span id="mobile_icon_menu" data-mobile-menu="icone"></span>
 
-        <span data-separador-menu id="separador"></span>
+        <span data-separador-menu id="separador_menu"></span>
 
         <nav id="menu_nav" data-mobile-menu="lista">
             <ul>
                 <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#intro-portfolio">Portfólio</a></li>
                 <li><a href="#sobre_maji">Sobre Maji</a></li>
                 <li><a href="#contatos">Contatos</a></li>
             </ul>
@@ -128,13 +128,13 @@
     </section>
 
     <!--Portfólio-->
-    <section id="portfolio" data-sessao>
+    <section id="intro-portfolio" data-sessao>
         <div id="cabecalho">
             <h1 class="titulo_sessao">Portfólio</h1>
-            <div class="ver_mais">
+            <a class="ver_mais" href="./portfolio.html">
                 <h2>Ver mais</h2>
-                <img class="arrow_diagonal" src="imgs/imgs-pag-principal/portfolio/arrow_diagonal.svg">
-            </div>
+                <img class="arrow_diagonal" src="imgs/arrow_diagonal.svg">
+            </a>
         </div>
 
         <div id="slide_wrapper" data-slide="wrapper">
@@ -143,21 +143,21 @@
                     <img src="imgs/imgs-pag-principal/portfolio/portfolio_maji_design_thumbnail.jpg">
                     <div class="infos_item">
                         <h3>Identidade Visual</h3>
-                        <img class="arrow_diagonal" src="imgs/imgs-pag-principal/portfolio/arrow_diagonal.svg">
+                        <img class="arrow_diagonal" src="imgs/arrow_diagonal.svg">
                     </div>
                 </li>
                 <li class="slide_item" data-slide="item">
                     <img src="imgs/imgs-pag-principal/portfolio/portfolio_amandla_thumbnail.jpg">
                     <div class="infos_item">
                         <h3>Identidade Visual</h3>
-                        <img class="arrow_diagonal" src="imgs/imgs-pag-principal/portfolio/arrow_diagonal.svg">
+                        <img class="arrow_diagonal" src="imgs/arrow_diagonal.svg">
                     </div>
                 </li>
                 <li class="slide_item" data-slide="item">
                     <img src="imgs/imgs-pag-principal/portfolio/portfolio_umbundu_thumbnail.jpg">
                     <div class="infos_item">
                         <h3>Editorial</h3>
-                        <img class="arrow_diagonal" src="imgs/imgs-pag-principal/portfolio/arrow_diagonal.svg">
+                        <img class="arrow_diagonal" src="imgs/arrow_diagonal.svg">
                     </div>
                 </li>
             </ul>
@@ -232,7 +232,7 @@
 
     <!--Rodapé-->
     <footer id="rodape">
-        <img data-scroll-to-top="logo" src="imgs/imgs-pag-principal/simbolo_rodape.svg">
+        <a href="./index.html"><img data-scroll-to-top="logo" src="imgs/imgs-pag-principal/simbolo_rodape.svg"></a>
         <p>2023</p>
     </footer>
 

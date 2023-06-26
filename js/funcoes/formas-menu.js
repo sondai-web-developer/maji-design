@@ -8,7 +8,7 @@ export default function formasMenu() {
     const linksInternos = document.querySelectorAll('[data-mobile-menu="lista"] a');
     const menuPrincipal = document.querySelector('[data-menu-principal]');
     const eventos = ['scroll', 'resize'];
-    
+
     function formas() {
         const sessaoServicoTopo = sessaoServico.getBoundingClientRect().top;
 
@@ -20,7 +20,7 @@ export default function formasMenu() {
             logo.classList.remove('mostrarElementosMenu');
         }
 
-        if(window.innerWidth >= 628 && sessaoServicoTopo <= 0){
+        if (window.innerWidth >= 628 && sessaoServicoTopo <= 0) {
             menuNavUl.style.justifyContent = 'flex-end';
             linksInternos.forEach((link) => {
                 link.style.color = '#025959';
@@ -37,9 +37,19 @@ export default function formasMenu() {
         }
     }
 
-    const debouncedFormas = debounce(formas, 200);
+    function addWindowEvents() {
+        const debouncedFormas = debounce(formas, 200);
 
-    eventos.forEach(evento => {
-        window.addEventListener(evento, debouncedFormas);
-    });
+        eventos.forEach(evento => {
+            window.addEventListener(evento, debouncedFormas);
+        });
+    }
+
+    function init() {
+        if (sessaoServico && menuNavUl) {
+            addWindowEvents();
+        }
+    }
+
+    init();
 }

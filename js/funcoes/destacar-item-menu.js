@@ -39,7 +39,9 @@ export default function destacarItemMenu() {
     }
 
     function init() {
-        addDestacarItemEvents();
+        if(sessoes.length){
+            addDestacarItemEvents();
+        }
     }
 
     init();

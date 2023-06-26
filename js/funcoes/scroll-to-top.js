@@ -10,9 +10,20 @@ export default function scrollToTop() {
         });
     }
 
-    eventos.forEach((evento) => {
-        logos.forEach(logo => {
-            logo.addEventListener(evento, scrollTop);
+    function addLogosEvents() {
+        eventos.forEach((evento) => {
+            logos.forEach(logo => {
+                logo.addEventListener(evento, scrollTop);
+            });
         });
-    });
+    }
+
+    function init() {
+        if (logos.length) {
+            addLogosEvents();
+        }
+    }
+
+    init();
+
 }

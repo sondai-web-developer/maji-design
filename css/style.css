@@ -1,9 +1,17 @@
 @import 'geral.css';
 @import 'reset.css';
+
+/*Página Principal*/
 @import 'pag-principal/menu-principal.css';
-@import 'pag-principal/inicio.css';
-@import 'pag-principal/servicos.css';
-@import 'pag-principal/portfolio.css';
-@import 'pag-principal/sobre-maji.css';
-@import 'pag-principal/contatos.css';
-@import 'pag-principal/rodape.css';
+@import 'pag-principal/main-inicio.css';
+@import 'pag-principal/main-servicos.css';
+@import 'pag-principal/main-portfolio.css';
+@import 'pag-principal/main-sobre-maji.css';
+@import 'pag-principal/main-contatos.css';
+@import 'pag-principal/main-rodape.css';
+/*Página Principal*/
+
+/*Portfólio*/
+@import 'pag-portfolio/menu-portfolio.css';
+@import 'pag-portfolio/portfolio.css';
+/*Portfólio*/

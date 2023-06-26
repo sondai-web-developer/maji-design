@@ -15,8 +15,18 @@ export default function abrirFecharMenu() {
     });
   }
 
-  eventos.forEach((evento) => {
-    iconeMenuMobile.addEventListener(evento, abrirFechar);
-  });
+  function addIconEvents(){
+    eventos.forEach((evento) => {
+      iconeMenuMobile.addEventListener(evento, abrirFechar);
+    });
+  }
+
+  function init(){
+    if(iconeMenuMobile && menuNav){
+      addIconEvents();
+    }
+  }
+
+  init();
 
 }

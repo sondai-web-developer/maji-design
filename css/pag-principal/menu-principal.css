@@ -17,7 +17,7 @@
   top:-800px;
 }
 
-#separador{
+#separador_menu{
   display: block;
   height: 1px;
   background: #04BFBF;
@@ -41,7 +41,7 @@
   }
 }
 
-#separador.mostrarElementosMenu, #logo.mostrarElementosMenu {
+#separador_menu.mostrarElementosMenu, #logo.mostrarElementosMenu {
   top: 0px;
   animation: mostrarElementosMenu 0.3s forwards;
 }

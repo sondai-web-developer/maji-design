@@ -1,3 +1,4 @@
+import scrollSuaveToContatos from './funcoes/scroll-suave-to-contatos.js';
 import destacarItemMenu from './funcoes/destacar-item-menu.js';
 import scrollSuave from './funcoes/scroll-suave.js';
 import slidePortfolio from './funcoes/slide-portfolio.js';
@@ -6,6 +7,7 @@ import formasMenu from './funcoes/formas-menu.js';
 import abrirFecharMenu from './funcoes/abrir-fechar-menu.js';
 import simboloInicio from './funcoes/simbolo-inicio.js';
 
+scrollSuaveToContatos();
 scrollSuave();
 
 setTimeout(() => {
