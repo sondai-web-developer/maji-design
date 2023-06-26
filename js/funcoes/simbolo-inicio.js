@@ -11,8 +11,19 @@ export default function simboloInicio() {
     }
   }
 
-  const debouncedMudarSimbolo = debounce(mudarSimbolo, 200);
+  function addWindowEvents(){
+    const debouncedMudarSimbolo = debounce(mudarSimbolo, 200);
+  
+    window.addEventListener('resize', debouncedMudarSimbolo);
+    document.addEventListener('DOMContentLoaded', mudarSimbolo);
+  }
 
-  window.addEventListener('resize', debouncedMudarSimbolo);
-  document.addEventListener('DOMContentLoaded', mudarSimbolo);
+  function init(){
+    if(simbolo){
+      addWindowEvents();
+    }
+  }
+
+  init();
+
 }

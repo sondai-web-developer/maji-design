@@ -197,13 +197,15 @@ export default function slidePortfolio() {
     }
 
     function init() {
-        transition(true);
-        addSlideEvents();
-        slidesConfig();
-        addResizeEvent();
-        changeSlide(1);
-        addArrowEvent();
-        addControl();
+        if(wrapper && lista){
+            transition(true);
+            addSlideEvents();
+            slidesConfig();
+            addResizeEvent();
+            changeSlide(1);
+            addArrowEvent();
+            addControl();
+        }
     }
 
     init();
