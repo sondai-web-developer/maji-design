@@ -5,9 +5,9 @@ export default function simboloInicio() {
 
   function mudarSimbolo() {
     if (window.innerWidth > 1000) {
-      simbolo.setAttribute('src', 'imgs/imgs-pag-principal/inicio/desktop_simbolo_maji_inicio.svg');
+      simbolo.setAttribute('src', 'imgs/pag-principal/inicio/desktop_simbolo_maji_inicio.svg');
     } else {
-      simbolo.setAttribute('src', 'imgs/imgs-pag-principal/inicio/mobile_tablet_simbolo_maji_inicio.svg');
+      simbolo.setAttribute('src', 'imgs/pag-principal/inicio/mobile_tablet_simbolo_maji_inicio.svg');
     }
   }
 
