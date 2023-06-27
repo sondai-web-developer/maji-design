@@ -65,7 +65,7 @@
 
 .item_portfolio>h2{
     margin-top: 15px;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 700;
     color: #013A40;
 }
@@ -73,8 +73,9 @@
 .item_portfolio>h3{
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 500;
     margin-top: 15px;
+    letter-spacing: 1px;
 }
 
 .item_portfolio>p{
