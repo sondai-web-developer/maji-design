@@ -83,3 +83,201 @@
         margin:0px;
     }
 }
+
+#apresentacao_projeto{
+    margin-top: 60px;
+    grid-column: 1/-1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#apresentacao_projeto li{
+    cursor: pointer;
+}
+
+#apresentacao_projeto li + li{
+    margin-top: 40px;
+}
+
+@media (min-width:670px){
+    #apresentacao_projeto{
+        justify-content: space-between;
+    }
+
+    #apresentacao_projeto li{
+        max-width: 290px;
+    }
+
+    #apresentacao_projeto li:nth-child(2){
+        margin-top: 0px;
+    }
+
+    #apresentacao_projeto li:last-child{
+        margin: 40px auto 0 auto;
+    }
+}
+
+@media (min-width:720px){
+    #apresentacao_projeto li{
+        max-width: 310px;
+    }
+}
+
+@media (min-width:740px){
+    #apresentacao_projeto li{
+        max-width: 320px;
+    }
+}
+
+@media (min-width:760px){
+    #apresentacao_projeto li{
+        max-width: 330px;
+    }
+}
+
+@media (min-width:780px){
+    #apresentacao_projeto li{
+        max-width: 340px;
+    }
+}
+
+@media (min-width:790px){
+    #apresentacao_projeto li{
+        max-width: 350px;
+    }
+}
+
+@media (min-width:810px){
+    #apresentacao_projeto li{
+        max-width: 360px;
+    }
+}
+
+@media (min-width:830px){
+    #apresentacao_projeto li{
+        max-width: 370px;
+    }
+}
+
+@media (min-width:860px){
+    #apresentacao_projeto li{
+        max-width: 380px;
+    }
+}
+
+@media (min-width:860px){
+    #apresentacao_projeto li{
+        max-width: 380px;
+    }
+}
+
+@media (min-width:880px){
+    #apresentacao_projeto li{
+        max-width: 390px;
+    }
+}
+
+@media (min-width:900px){
+    #apresentacao_projeto li{
+        max-width: 400px;
+    }
+}
+
+@media (min-width:910px){
+    #apresentacao_projeto li{
+        max-width: 410px;
+    }
+}
+
+@media (min-width:930px){
+    #apresentacao_projeto li{
+        max-width: 420px;
+    }
+}
+
+@media (min-width:950px){
+    #apresentacao_projeto li{
+        max-width: 430px;
+    }
+}
+
+@media (min-width:970px){
+    #apresentacao_projeto li{
+        max-width: 440px;
+    }
+}
+
+@media (min-width:990px){
+    #apresentacao_projeto li{
+        max-width: 450px;
+    }
+}
+
+@media (min-width:1000px){
+    #apresentacao_projeto li{
+        max-width: 300px;
+    }
+}
+
+@media (min-width:1030px){
+    #apresentacao_projeto li{
+        max-width: 315px;
+    }
+}
+
+@media (min-width:1060px){
+    #apresentacao_projeto li{
+        max-width: 330px;
+    }
+}
+
+@media (min-width:1090px){
+    #apresentacao_projeto li{
+        max-width: 340px;
+    }
+}
+
+@media (min-width:1115px){
+    #apresentacao_projeto li{
+        max-width: 350px;
+    }
+}
+
+@media (min-width:1130px){
+    #apresentacao_projeto li{
+        max-width: 240px;
+    }
+
+    #apresentacao_projeto li:nth-child(3){
+        margin-top: 0px;
+    }
+
+    #apresentacao_projeto li:nth-last-child(-n+2){
+        margin: 40px auto 0 auto;
+    }
+}
+
+@media (min-width: 1140px){
+    #apresentacao_projeto li{
+        max-width: 245px;
+    }
+}
+
+@media (min-width: 1200px){
+    #apresentacao_projeto li{
+        max-width: 260px;
+    }
+}
+
+@media (min-width: 1260px){
+    #apresentacao_projeto li{
+        max-width: 280px;
+    }
+}
+
+@media (min-width: 1310px){
+    #apresentacao_projeto li{
+        max-width: 300px;
+    }
+}
