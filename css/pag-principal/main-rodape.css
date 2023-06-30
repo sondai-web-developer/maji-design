@@ -3,6 +3,10 @@
     background:#013A40;
 }
 
+#rodape>a{
+    cursor: pointer;
+}
+
 #rodape>a, #rodape>p{
     grid-column:1/-1 ;
     margin:0 auto;
