@@ -14,7 +14,7 @@
     font-weight:700;
     color: #013A40;
     align-self: end;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
 }
 
 #tags_projeto{
@@ -24,15 +24,27 @@
 }
 
 #tags_projeto li a{
+    display: inline-block;
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
     font-weight: 400;
     color:#013A40;
     padding: 0 5px;
     cursor: default;
+    margin: 2px;
+    text-align: center;
+}
+
+#tag_identidade_visual{
     background: #82EBEB;
-    margin: 5px;
-    width:110px;
+}
+
+#tag_editorial{
+    background: #F8BF7A;
+}
+
+#tag_website{
+    background: #90CF9E;
 }
 
 #ano_projeto{
@@ -113,9 +125,6 @@
         margin-top: 0px;
     }
 
-    #apresentacao_projeto li:last-child{
-        margin: 40px auto 0 auto;
-    }
 }
 
 @media (min-width:720px){
@@ -251,10 +260,6 @@
 
     #apresentacao_projeto li:nth-child(3){
         margin-top: 0px;
-    }
-
-    #apresentacao_projeto li:nth-last-child(-n+2){
-        margin: 40px auto 0 auto;
     }
 }
 
