@@ -1,3 +1,4 @@
+import projetoAtual from './funcoes/projeto-atual.js';
 import abrirFecharMenuProjeto from './funcoes/abrir-fechar-menu-projeto.js';
 import scrollSuaveToContatos from './funcoes/scroll-suave-to-contatos.js';
 import destacarItemMenu from './funcoes/destacar-item-menu.js';
@@ -8,6 +9,7 @@ import formasMenu from './funcoes/formas-menu.js';
 import abrirFecharMenu from './funcoes/abrir-fechar-menu.js';
 import simboloInicio from './funcoes/simbolo-inicio.js';
 
+projetoAtual();
 abrirFecharMenuProjeto();
 scrollSuaveToContatos();
 scrollSuave();
