@@ -26,13 +26,17 @@ export default function formasMenu() {
                 link.style.color = '#025959';
                 link.style.fontWeight = '600';
             });
-            menuPrincipal.style.background = '#FFF9F1';
         } else {
             menuNavUl.style.justifyContent = 'center';
             linksInternos.forEach((link) => {
                 link.style.color = '#FFF9F1';
                 link.style.fontWeight = '400';
             });
+        }
+
+        if(sessaoServicoTopo <= 0){
+            menuPrincipal.style.background = '#FFF9F1';
+        } else {
             menuPrincipal.style.background = 'transparent';
         }
     }

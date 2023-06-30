@@ -41,14 +41,6 @@
     cursor: default;
 }
 
-.tags>li:nth-child(1){
-    background: #82EBEB;
-}
-
-.tags>li:nth-child(2){
-    background: #F8BF7A;
-}
-
 .tags>li+li{
     margin-left: 5px;
 }
