@@ -1,4 +1,4 @@
-import clickOutside from "./clickoutside";
+import clickOutside from '../clickoutside';
 
 export default function abrirFecharMenuProjeto() {
   const iconeMenuMobile = document.querySelector('[data-menu-projeto="icone"]');

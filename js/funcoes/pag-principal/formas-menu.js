@@ -1,4 +1,4 @@
-import debounce from './debounce.js';
+import debounce from '../debounce.js';
 
 export default function formasMenu() {
     const separador = document.querySelector('[data-separador-menu]');
