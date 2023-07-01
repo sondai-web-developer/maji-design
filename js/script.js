@@ -1,6 +1,5 @@
 /*Pag Projeto*/
 import projetoAtual from './funcoes/pag-projeto/projeto-atual.js';
-import abrirFecharMenuProjeto from './funcoes/pag-projeto/abrir-fechar-menu-projeto.js';
 
 /*Pag Portfólio*/
 import scrollSuaveToContatos from './funcoes/pag-portfolio/scroll-suave-to-contatos.js';
@@ -17,7 +16,6 @@ import destacarItemMenu from './funcoes/pag-principal/destacar-item-menu.js';
 import abrirFecharMenu from './funcoes/abrir-fechar-menu.js';
 
 projetoAtual();
-abrirFecharMenuProjeto();
 
 scrollSuaveToContatos();
 

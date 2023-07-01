@@ -1,5 +1,5 @@
 export default function scrollSuave() {
-    const linksInternos = document.querySelectorAll('[data-mobile-menu="lista"] a');
+    const linksInternos = document.querySelectorAll('[data-menu="scroll"] a');
     const eventos = ['touchstart', 'click'];
 
     function scrollToSection(event) {
