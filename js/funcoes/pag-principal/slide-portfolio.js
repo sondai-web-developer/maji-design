@@ -1,4 +1,4 @@
-import debounce from "./debounce.js";
+import debounce from "../debounce.js";
 
 export default function slidePortfolio() {
     const wrapper = document.querySelector('[data-slide="wrapper"]');

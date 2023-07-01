@@ -1,25 +1,33 @@
-import projetoAtual from './funcoes/projeto-atual.js';
-import abrirFecharMenuProjeto from './funcoes/abrir-fechar-menu-projeto.js';
-import scrollSuaveToContatos from './funcoes/scroll-suave-to-contatos.js';
-import destacarItemMenu from './funcoes/destacar-item-menu.js';
-import scrollSuave from './funcoes/scroll-suave.js';
-import slidePortfolio from './funcoes/slide-portfolio.js';
-import scrollToTop from './funcoes/scroll-to-top.js';
-import formasMenu from './funcoes/formas-menu.js';
+/*Pag Projeto*/
+import projetoAtual from './funcoes/pag-projeto/projeto-atual.js';
+import abrirFecharMenuProjeto from './funcoes/pag-projeto/abrir-fechar-menu-projeto.js';
+
+/*Pag Portfólio*/
+import scrollSuaveToContatos from './funcoes/pag-portfolio/scroll-suave-to-contatos.js';
+
+/*Pag Principal*/
+import scrollSuave from './funcoes/pag-principal/scroll-suave.js';
+import slidePortfolio from './funcoes/pag-principal/slide-portfolio.js';
+import scrollToTop from './funcoes/pag-principal/scroll-to-top.js';
+import formasMenu from './funcoes/pag-principal/formas-menu.js';
+import simboloInicio from './funcoes/pag-principal/simbolo-inicio.js';
+import destacarItemMenu from './funcoes/pag-principal/destacar-item-menu.js';
+
+/*Geral*/
 import abrirFecharMenu from './funcoes/abrir-fechar-menu.js';
-import simboloInicio from './funcoes/simbolo-inicio.js';
 
 projetoAtual();
 abrirFecharMenuProjeto();
-scrollSuaveToContatos();
-scrollSuave();
 
+scrollSuaveToContatos();
+
+scrollSuave();
 setTimeout(() => {
     destacarItemMenu();
     slidePortfolio();
 }, 800);
-
 scrollToTop();
 formasMenu();
-abrirFecharMenu();
 simboloInicio();
+
+abrirFecharMenu();
