@@ -207,7 +207,7 @@ export default function slidePortfolio() {
             addControl();
         }
     }
-
+    
     init();
 
 }
