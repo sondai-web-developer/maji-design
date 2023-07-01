@@ -1,6 +1,5 @@
 export default function scrollSuaveToContatos(){
     const itemContatos = document.querySelector('[data-menu-item="contatos"]');
-
     const eventos = ['touchstart', 'click'];
 
     function scrollToSection(event) {
