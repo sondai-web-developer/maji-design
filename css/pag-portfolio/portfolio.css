@@ -24,11 +24,6 @@
 
 .tags {
     display: flex;
-    background: yellow;
-}
-
-.tags li{
-    background: burlywood;
 }
 
 .tags li a {
