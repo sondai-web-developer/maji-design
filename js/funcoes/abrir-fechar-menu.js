@@ -9,13 +9,13 @@ export default function abrirFecharMenu() {
   function abrirFechar(event) {
     event.preventDefault();
     this.classList.add('transformarIcone');
-    menuNav.classList.add('mostrarItensMenu');
+    menuNav.classList.add('exibirNavMenu');
     if(btnVoltar){
       btnVoltar.style.color = '#04BFBF';
     }
     clickOutside(menuNav, ['touchstart', 'click'], () => {
       this.classList.remove('transformarIcone');
-      menuNav.classList.remove('mostrarItensMenu');
+      menuNav.classList.remove('exibirNavMenu');
       if(btnVoltar){
         btnVoltar.style.color = '#025959';
       }

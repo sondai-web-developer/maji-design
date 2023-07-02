@@ -1,7 +1,9 @@
-/*Pag Projeto*/
-import projetoAtual from './funcoes/pag-projeto/projeto-atual.js';
+/*Geral*/
+import scrollSuave from './funcoes/scroll-suave.js';
+import abrirFecharMenu from './funcoes/abrir-fechar-menu.js';
 
-projetoAtual();
+scrollSuave();
+abrirFecharMenu();
 
 
 
@@ -20,9 +22,7 @@ simboloInicio();
 
 
 
-/*Geral*/
-import scrollSuave from './funcoes/scroll-suave.js';
-import abrirFecharMenu from './funcoes/abrir-fechar-menu.js';
+/*Pag Projeto*/
+import projetoAtual from './funcoes/pag-projeto/projeto-atual.js';
 
-scrollSuave();
-abrirFecharMenu();
+projetoAtual();

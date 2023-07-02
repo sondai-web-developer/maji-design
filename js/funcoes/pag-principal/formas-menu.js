@@ -8,16 +8,17 @@ export default function formasMenu() {
     const linksInternos = document.querySelectorAll('[data-menu="nav"] a');
     const menuPrincipal = document.querySelector('[data-menu="cabecalho"]');
     const eventos = ['scroll', 'resize'];
+    const ativar = 'exibirSeparadorELogo';
 
     function formas() {
         const sessaoServicoTopo = sessaoServico.getBoundingClientRect().top;
 
         if (sessaoServicoTopo <= 0) {
-            separador.classList.add('mostrarElementosMenu');
-            logo.classList.add('mostrarElementosMenu');
+            separador.classList.add(ativar);
+            logo.classList.add(ativar);
         } else {
-            separador.classList.remove('mostrarElementosMenu');
-            logo.classList.remove('mostrarElementosMenu');
+            separador.classList.remove(ativar);
+            logo.classList.remove(ativar);
         }
 
         if (window.innerWidth >= 628 && sessaoServicoTopo <= 0) {
