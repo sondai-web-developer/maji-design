@@ -3,7 +3,7 @@
     flex-wrap: wrap;
 }
 
-.lista_itens li + li{
+.lista_itens > li + li{
     margin-top: 60px;
 }
 
