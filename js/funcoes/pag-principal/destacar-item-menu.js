@@ -31,9 +31,9 @@ export default function destacarItemMenu() {
         const infosSessoesArray = infosSessoes();
         infosSessoesArray.forEach((infosSessao => {
             if (infosSessao.sessaoOffsetTop - 1 <= scrollTop && infosSessao.sessaoOffsetTop - 1 + infosSessao.sessaoHeight >= scrollTop) {
-                infosSessao.itemMenu.classList.add('destacar');
+                infosSessao.itemMenu.classList.add('destacarItem');
             } else {
-                infosSessao.itemMenu.classList.remove('destacar');
+                infosSessao.itemMenu.classList.remove('destacarItem');
             }
         }));
     }

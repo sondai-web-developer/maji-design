@@ -1,4 +1,4 @@
-#menu_portfolio{
+#cabecalho_menu_portfolio{
     position: fixed;
     z-index: 1500;
     width:100%;
@@ -7,30 +7,30 @@
     grid-column: 1/-1;
 }
 
-#menu_portfolio>nav>ul>li>a{
+#cabecalho_menu_portfolio>nav>ul>li>a{
     color:#025959;
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     font-weight: 500;
 }
 
-#menu_portfolio>nav>ul{
+#cabecalho_menu_portfolio>nav>ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#menu_portfolio>nav>ul>li:nth-child(1){
+#cabecalho_menu_portfolio>nav>ul>li:nth-child(1){
     display: flex;
     align-items: center;
     margin-left: 10px;
 }
 
-#menu_portfolio>nav>ul>li:nth-child(1)>a{
+#cabecalho_menu_portfolio>nav>ul>li:nth-child(1)>a{
     margin-left:5px;
 }
 
-#menu_portfolio>nav>ul>li:nth-child(3){
+#cabecalho_menu_portfolio>nav>ul>li:nth-child(3){
     margin-right: 10px;
 }
 
@@ -42,14 +42,14 @@
 }
 
 @media (min-width:628px){
-    #menu_portfolio{
+    #cabecalho_menu_portfolio{
         padding-left: 30px;
         padding-right: 30px;
     }
 }
 
 @media (min-width:1000px){
-    #menu_portfolio{
+    #cabecalho_menu_portfolio{
         padding-left: 183px;
         padding-right: 183px;
     }

@@ -1,22 +1,26 @@
+/*Geral*/
 @import 'geral.css';
 @import 'reset.css';
 
+
+
 /*Página Principal*/
-@import 'pag-principal/menu-principal.css';
+@import 'pag-principal/cabecalho-menu.css';
 @import 'pag-principal/main-inicio.css';
 @import 'pag-principal/main-servicos.css';
 @import 'pag-principal/main-portfolio.css';
 @import 'pag-principal/main-sobre-maji.css';
 @import 'pag-principal/main-contatos.css';
 @import 'pag-principal/main-rodape.css';
-/*Página Principal*/
+
+
 
 /*Portfólio*/
-@import 'pag-portfolio/menu-portfolio.css';
+@import 'pag-portfolio/cabecalho-menu-portfolio.css';
 @import 'pag-portfolio/portfolio.css';
-/*Portfólio*/
+
+
 
 /*Projeto*/
-@import 'pag-projeto/menu-projeto.css';
+@import 'pag-projeto/cabecalho-menu-projeto.css';
 @import 'pag-projeto/projeto.css';
-/*Projeto*/
