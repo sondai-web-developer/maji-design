@@ -1,5 +1,5 @@
 export default function scrollToTop() {
-    const logos = document.querySelectorAll('[data-scroll-to-top="logo"]');
+    const logos = document.querySelectorAll('[data-scroll-suave="logo"]');
     const eventos = ['touchstart', 'click'];
 
     function scrollTop(event) {

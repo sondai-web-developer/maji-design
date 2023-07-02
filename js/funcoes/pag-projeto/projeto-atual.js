@@ -1,6 +1,6 @@
 export default function projetoAtual() {
 
-    const linksInternos = document.querySelectorAll('[data-mobile-menu="lista"] a');
+    const linksInternos = document.querySelectorAll('[data-menu="nav"] a');
 
     function destacarProjetoAtual() {
         linksInternos.forEach(link => {

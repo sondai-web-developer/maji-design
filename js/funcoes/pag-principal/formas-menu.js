@@ -1,12 +1,12 @@
 import debounce from '../debounce.js';
 
 export default function formasMenu() {
-    const separador = document.querySelector('[data-separador-menu]');
-    const logo = document.querySelector('[data-scroll-to-top="logo"]');
+    const separador = document.querySelector('[data-menu="separador"]');
+    const logo = document.querySelector('[data-menu="logo"]');
     const sessaoServico = document.querySelector('[data-sessao]');
-    const menuNavUl = document.querySelector('[data-mobile-menu="lista"] ul');
-    const linksInternos = document.querySelectorAll('[data-mobile-menu="lista"] a');
-    const menuPrincipal = document.querySelector('[data-menu-principal]');
+    const menuNavUl = document.querySelector('[data-menu="nav"] ul');
+    const linksInternos = document.querySelectorAll('[data-menu="nav"] a');
+    const menuPrincipal = document.querySelector('[data-menu="cabecalho"]');
     const eventos = ['scroll', 'resize'];
 
     function formas() {
