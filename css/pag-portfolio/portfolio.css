@@ -1,27 +1,21 @@
 #portfolio>h1{
     grid-row:1;
-    grid-column: 2;
+    grid-column: 1/-1;
 }
 
-#lista_projetos{
+#lista_portfolio{
     grid-row:2;
-    grid-column: 2;
-    display: flex;
-    flex-wrap: wrap;
+    grid-column: 1/-1;
 }
 
-.item_portfolio + .item_portfolio{
-    margin-top: 60px;
-}
-
-.item_portfolio>a>img{
+#lista_portfolio>li>a>img{
     border-radius: 9px;
     -webkit-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.item_portfolio>div{
+#lista_portfolio>li>div{
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
@@ -45,7 +39,7 @@
     margin-left: 5px;
 }
 
-.item_portfolio>div>a{
+#lista_portfolio>li>div>a{
     color:#025959;
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
@@ -55,14 +49,14 @@
     cursor: pointer;
 }
 
-.item_portfolio>h2{
+#lista_portfolio>li>h2{
     margin-top: 15px;
     font-size: 26px;
     font-weight: 700;
     color: #013A40;
 }
 
-.item_portfolio>h3{
+#lista_portfolio>li>h3{
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
     font-weight: 500;
@@ -70,7 +64,7 @@
     letter-spacing: 1px;
 }
 
-.item_portfolio>p{
+#lista_portfolio>li>p{
     margin-top: 20px;
     font-size: 16px;
     font-weight: 400;
@@ -78,190 +72,15 @@
 }
 
 @media (min-width:628px){
-    #portfolio>h1{
-        grid-column: 1 / -1;
-    }
-
-    #lista_projetos{
-        grid-column: 1 / -1;
-        justify-content: space-between;
-    }
-
-    .item_portfolio{
-        max-width: 270px;
-    }
-
-    #lista_projetos li:nth-child(2){
-        margin-top:0px;
-    }
-    
-    #lista_projetos li:nth-child(3){
-        margin: 60px auto 0 auto;
-    }
-}
-
-@media (min-width:670px){
-    .item_portfolio{
-        max-width: 290px;
-    }
-}
-
-@media (min-width:720px){
-    .item_portfolio{
-        max-width: 310px;
-    }
-}
-
-@media (min-width:740px){
-    .item_portfolio{
-        max-width: 320px;
-    }
-}
-
-@media (min-width:760px){
-    .item_portfolio{
-        max-width: 330px;
-    }
-}
-
-@media (min-width:780px){
-    .item_portfolio{
-        max-width: 340px;
-    }
-}
-
-@media (min-width:790px){
-    .item_portfolio{
-        max-width: 350px;
-    }
-}
-
-@media (min-width:810px){
-    .item_portfolio{
-        max-width: 360px;
-    }
-}
-
-@media (min-width:830px){
-    .item_portfolio{
-        max-width: 370px;
-    }
-}
-
-@media (min-width:860px){
-    .item_portfolio{
-        max-width: 380px;
-    }
-}
-
-@media (min-width:860px){
-    .item_portfolio{
-        max-width: 380px;
-    }
-}
-
-@media (min-width:880px){
-    .item_portfolio{
-        max-width: 390px;
-    }
-}
-
-@media (min-width:900px){
-    .item_portfolio{
-        max-width: 400px;
-    }
-}
-
-@media (min-width:910px){
-    .item_portfolio{
-        max-width: 410px;
-    }
-}
-
-@media (min-width:930px){
-    .item_portfolio{
-        max-width: 420px;
-    }
-}
-
-@media (min-width:950px){
-    .item_portfolio{
-        max-width: 430px;
-    }
-}
-
-@media (min-width:970px){
-    .item_portfolio{
-        max-width: 440px;
-    }
-}
-
-@media (min-width:990px){
-    .item_portfolio{
-        max-width: 450px;
-    }
-}
-
-@media (min-width:1000px){
-    .item_portfolio{
-        max-width: 300px;
-    }
-}
-
-@media (min-width:1030px){
-    .item_portfolio{
-        max-width: 315px;
-    }
-}
-
-@media (min-width:1060px){
-    .item_portfolio{
-        max-width: 330px;
-    }
-}
-
-@media (min-width:1090px){
-    .item_portfolio{
-        max-width: 340px;
-    }
-}
-
-@media (min-width:1115px){
-    .item_portfolio{
-        max-width: 350px;
+    #lista_portfolio>li:nth-child(3){
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 @media (min-width:1130px){
-    .item_portfolio{
-        max-width: 240px;
-    }
-
-    #lista_projetos li:nth-child(3){
-        margin: 0px;
-    }
-}
-
-@media (min-width: 1140px){
-    .item_portfolio{
-        max-width: 245px;
-    }
-}
-
-@media (min-width: 1200px){
-    .item_portfolio{
-        max-width: 260px;
-    }
-}
-
-@media (min-width: 1260px){
-    .item_portfolio{
-        max-width: 280px;
-    }
-}
-
-@media (min-width: 1310px){
-    .item_portfolio{
-        max-width: 300px;
+    #lista_portfolio>li:nth-child(3){
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
