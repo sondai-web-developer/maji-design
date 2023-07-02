@@ -1,9 +1,9 @@
 import clickOutside from "./clickoutside";
 
 export default function abrirFecharMenu() {
-  const iconeMenuMobile = document.querySelector('[data-mobile-menu="icone"]');
-  const menuNav = document.querySelector('[data-mobile-menu="lista"]');
-  const btnVoltar = document.querySelector('[data-menu-projeto="voltar"]');
+  const iconeMenuMobile = document.querySelector('[data-menu="icone"]');
+  const menuNav = document.querySelector('[data-menu="nav"]');
+  const btnVoltar = document.querySelector('[data-menu="voltar"]');
   const eventos = ['touchstart', 'click'];
 
   function abrirFechar(event) {
