@@ -1,5 +1,4 @@
 #infos_projeto{
-    grid-column: 1/-1;
     display: grid;
     grid-template-areas: 
     "titulo"

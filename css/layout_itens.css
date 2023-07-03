@@ -1,3 +1,5 @@
+/*1 coluna*/
+
 .lista_itens{
     display: flex;
     flex-wrap: wrap;
