@@ -10,26 +10,28 @@ export default function abrirFecharMenu() {
     event.preventDefault();
     this.classList.add('transformarIcone');
     menuNav.classList.add('exibirNavMenu');
-    if(btnVoltar){
+    if (btnVoltar) {
       btnVoltar.style.color = '#04BFBF';
+    } if (btnVoltar && window.innerWidth >= 800){
+      btnVoltar.style.color = '#025959';
     }
     clickOutside(menuNav, ['touchstart', 'click'], () => {
       this.classList.remove('transformarIcone');
       menuNav.classList.remove('exibirNavMenu');
-      if(btnVoltar){
+      if (btnVoltar) {
         btnVoltar.style.color = '#025959';
       }
     });
   }
 
-  function addIconEvents(){
+  function addIconEvents() {
     eventos.forEach((evento) => {
       iconeMenuMobile.addEventListener(evento, abrirFechar);
     });
   }
 
-  function init(){
-    if(iconeMenuMobile && menuNav){
+  function init() {
+    if (iconeMenuMobile && menuNav) {
       addIconEvents();
     }
   }
