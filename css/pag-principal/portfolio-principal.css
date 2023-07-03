@@ -1,15 +1,24 @@
-#cabecalho {
+#cabecalho_portfolio {
     display: flex;
     justify-content: space-between;
-    grid-column: 2;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 40px;
 }
 
-#intro-portfolio h2,
-h3 {
-    color: #013A40;
-    font-size: 16px;
+@media (min-width:628px){
+    #cabecalho_portfolio{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
+@media (min-width:1000px){
+    #cabecalho_portfolio{
+        padding-left: 183px;
+        padding-right: 183px;
+    }
+}
 
 .infos_item {
     display: flex;
@@ -18,27 +27,19 @@ h3 {
     margin-top: 15px;
 }
 
-.ver_mais {
+#ver_mais {
     display: flex;
-    cursor: pointer;
     margin-top: 8px;
 }
 
-.ver_mais>h2 {
+#ver_mais>h2 {
     margin-top: 2px;
     margin-right: 2px;
-}
-
-.arrow_diagonal {
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
 }
 
 /*Slide*/
 
 #slide_wrapper {
-    grid-column: 1/-1;
     overflow: hidden;
 }
 

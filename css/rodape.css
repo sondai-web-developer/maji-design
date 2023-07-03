@@ -5,11 +5,8 @@
 
 #rodape>a{
     cursor: pointer;
-}
-
-#rodape>a, #rodape>p{
-    grid-column:1/-1 ;
-    margin:0 auto;
+    width:97px;
+    margin: 0 auto;
 }
 
 #rodape>p{
@@ -18,4 +15,5 @@
     font-weight: 700;
     letter-spacing: 3px;
     margin-top: 15px;
+    text-align: center;
 }
