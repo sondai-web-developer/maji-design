@@ -1,0 +1,32 @@
+#infos_sobre_maji {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+#infos_sobre_maji>img {
+    margin: 0 auto;
+}
+
+#infos_sobre_maji>div {
+    margin-top: 40px;
+}
+
+@media (min-width:628px) {
+    #infos_sobre_maji>img {
+        width: 400px;
+    }
+}
+
+@media (min-width:1200px) {
+    #infos_sobre_maji {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    #infos_sobre_maji>div {
+        max-width: 485px;
+        margin-top: 0px;
+    }
+}

@@ -1,47 +1,121 @@
+/*Grid geral*/
 .grid_geral{
     background: #FFF9F1;
 }
 
-.grid_geral, #intro-portfolio, #rodape, #portfolio, #projeto{
+.grid_geral{
     display: grid;
     grid-template-columns: 10px 1fr 10px;
 }
 
 @media (min-width:628px){
-    .grid_geral, #intro-portfolio, #rodape, #portfolio, #projeto{
+    .grid_geral{
         grid-template-columns: 30px 1fr 30px;
     }
 }
 
 @media (min-width:1000px){
-    .grid_geral, #intro-portfolio, #rodape, #portfolio, #projeto{
+    .grid_geral{
         grid-template-columns: 183px 1fr 183px;
     }
 }
 
-#servicos, #intro-portfolio, #sobre_maji, #contatos, #portfolio, #projeto{
+/*Espaçamento do topo e da base para as sessões*/
+.gap_top_bottom_sessoes{
     padding:100px 0 60px 0;
 }
 
-#inicio, #intro-portfolio, #rodape{
+/*Colunas para as sessões*/
+.sessao_todas_col{
     grid-column: 1 / -1;
 }
 
-#servicos, #sobre_maji, #portfolio, #projeto{
+.sessao_col_2{
     grid-column: 2;
 }
 
-.titulo_sessao{
-    font-size:28px;
+/*Formatação para os títulos das sessões e para os nomes dos projetos*/
+.titulo_sessao, .nome_projeto{
+    font-family: 'Quicksand', sans-serif;
+    font-size:32px;
     font-weight:700;
-    margin-bottom:40px;
     color: #013A40;
 }
 
-h1, h2, h3{
+/*Formatação para os títulos dos itens*/
+.titulo_item{
     font-family: 'Quicksand', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #013A40;
 }
 
-p{
+/*Formatação para as descrições dos serviços e dos projetos*/
+.descricao_estudio, .descricao_servico, .descricao_projeto{
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+/*Formatação para os corpos de textos*/
+.corpo_txt{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+/*Formatação dos textos dos botões 'Ver mais' e 'Acessar'*/
+.ver_mais, .acessar{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color:#013A40;
+}
+
+/*Tags projetos*/
+.tags_projeto{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tags_projeto li a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    color:#013A40;
+    padding: 0 5px;
+    margin: 2px;
+    cursor: default;
+    border-radius: 3px;
+}
+
+#tag_identidade_visual{
+    background: #82EBEB;
+}
+
+#tag_editorial{
+    background: #F8BF7A;
+}
+
+#tag_website{
+    background: #90CF9E;
+}
+
+/*Arrow diagonal*/
+.arrow_diagonal {
+    width: 22px;
+    height: 22px;
+}
+
+/*Ano do projeto*/
+.ano_projeto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    color:#013A40;
 }

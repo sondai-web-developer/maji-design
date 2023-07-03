@@ -2,17 +2,17 @@
 @import 'geral.css';
 @import 'reset.css';
 @import 'layout_itens.css';
+@import 'contatos.css';
+@import 'rodape.css';
 
 
 
 /*Página Principal*/
-@import 'pag-principal/cabecalho-menu.css';
-@import 'pag-principal/main-inicio.css';
-@import 'pag-principal/main-servicos.css';
-@import 'pag-principal/main-portfolio.css';
-@import 'pag-principal/main-sobre-maji.css';
-@import 'pag-principal/main-contatos.css';
-@import 'pag-principal/main-rodape.css';
+@import 'pag-principal/cabecalho-menu-principal.css';
+@import 'pag-principal/inicio-principal.css';
+@import 'pag-principal/servicos-principal.css';
+@import 'pag-principal/portfolio-principal.css';
+@import 'pag-principal/sobre-maji-principal.css';
 
 
 

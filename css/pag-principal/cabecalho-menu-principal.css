@@ -1,4 +1,4 @@
-#cabecalho_menu {
+#cabecalho_menu_principal {
   position: fixed;
   width: 100%;
   display: grid;
@@ -7,7 +7,7 @@
   z-index: 1500;
 }
 
-#logo_menu {
+#logo_menu_principal {
   grid-column: 1 / -1;
   grid-row: 1;
   width: 60px;
@@ -18,7 +18,7 @@
   cursor: pointer;
 }
 
-#separador_menu {
+#separador_menu_principal {
   display: block;
   height: 1px;
   background: #04BFBF;
@@ -42,13 +42,13 @@
   }
 }
 
-#separador_menu.exibirSeparadorELogo,
-#logo_menu.exibirSeparadorELogo {
+#separador_menu_principal.exibirSeparadorELogo,
+#logo_menu_principal.exibirSeparadorELogo {
   top: 0px;
   animation: exibirSeparadorELogo 0.3s forwards;
 }
 
-#nav_menu {
+#nav_menu_principal {
   position: absolute;
   z-index: 900;
   background: #013a40;
@@ -59,16 +59,16 @@
   top: 0px;
 }
 
-#nav_menu ul {
+#nav_menu_principal ul {
   width: 250px;
   margin: 0 auto;
 }
 
-#nav_menu ul li+li {
+#nav_menu_principal ul li+li {
   margin-top: 15px;
 }
 
-#nav_menu ul li:after {
+#nav_menu_principal ul li:after {
   content: '';
   display: block;
   width: 50px;
@@ -77,11 +77,11 @@
   margin: 14px auto 0 auto;
 }
 
-#nav_menu ul li:last-child:after {
+#nav_menu_principal ul li:last-child:after {
   display: none;
 }
 
-#nav_menu ul li a {
+#nav_menu_principal ul li a {
   font-family: 'Quicksand', sans-serif;
   color: #FFF9F1;
   font-size: 20px;
@@ -94,7 +94,7 @@
   justify-content: center;
 }
 
-#icone_menu {
+#icone_menu_principal {
   display: block;
   width: 26px;
   height: 26px;
@@ -107,8 +107,8 @@
   top: 10px;
 }
 
-#icone_menu::before,
-#icone_menu::after {
+#icone_menu_principal::before,
+#icone_menu_principal::after {
   content: "";
   display: block;
   height: 1px;
@@ -118,17 +118,17 @@
   transition: transform 0.3s ease;
 }
 
-#icone_menu.transformarIcone {
+#icone_menu_principal.transformarIcone {
   border-top-color: transparent;
 }
 
-#icone_menu.transformarIcone::before {
+#icone_menu_principal.transformarIcone::before {
   margin-top: 0px;
   top: 8px;
   transform: rotate(45deg);
 }
 
-#icone_menu.transformarIcone::after {
+#icone_menu_principal.transformarIcone::after {
   margin-top: 0px;
   top: 7px;
   transform: rotate(135deg);
@@ -146,27 +146,27 @@
   }
 }
 
-#nav_menu.exibirNavMenu {
+#nav_menu_principal.exibirNavMenu {
   right: 0px;
   animation: exibirNavMenu 0.3s forwards;
 }
 
 @media (min-width:628px) {
-  #icone_menu {
+  #icone_menu_principal {
     display: none;
   }
 
-  #cabecalho_menu {
+  #cabecalho_menu_principal {
     padding-left: 30px;
     padding-right: 30px;
   }
 
-  #logo_menu {
+  #logo_menu_principal {
     grid-column: 1;
     margin: 0 0 0 10px;
   }
 
-  #nav_menu {
+  #nav_menu_principal {
     position: static;
     grid-column: 1 / -1;
     grid-row: 1;
@@ -175,40 +175,40 @@
     width: auto;
   }
 
-  #nav_menu ul {
+  #nav_menu_principal ul {
     width: auto;
     display: flex;
     margin: 0px;
     justify-content: center;
   }
 
-  #nav_menu ul li:after {
+  #nav_menu_principal ul li:after {
     display: none;
   }
 
-  #nav_menu ul li+li {
+  #nav_menu_principal ul li+li {
     margin-top: 0px;
     margin-left: 10px;
   }
 
-  #nav_menu ul li a {
+  #nav_menu_principal ul li a {
     font-size: 16px;
   }
 }
 
 @media (min-width:1000px) {
-  #cabecalho_menu {
+  #cabecalho_menu_principal {
     padding-left: 183px;
     padding-right: 183px;
   }
 
-  #nav_menu ul li+li {
+  #nav_menu_principal ul li+li {
     margin-top: 0px;
     margin-left: 15px;
   }
 }
 
-#nav_menu ul li a::before {
+#nav_menu_principal ul li a::before {
   content: '';
   display: block;
   width: 6px;
@@ -219,7 +219,7 @@
   transition: .3s;
 }
 
-#nav_menu ul li a::after {
+#nav_menu_principal ul li a::after {
   content: '';
   display: block;
   width: 6px;
@@ -230,15 +230,15 @@
   transition: .3s;
 }
 
-#nav_menu ul li a.destacarItem::before,
-#nav_menu ul li a.destacarItem::after {
+#nav_menu_principal ul li a.destacarItem::before,
+#nav_menu_principal ul li a.destacarItem::after {
   background: #FFF9F1;
 }
 
 @media (min-width:628px) {
 
-  #nav_menu ul li a.destacarItem::before,
-  #nav_menu ul li a.destacarItem::after {
+  #nav_menu_principal ul li a.destacarItem::before,
+  #nav_menu_principal ul li a.destacarItem::after {
     background: #025959;
   }
 }

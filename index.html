@@ -61,15 +61,14 @@
 <body class="grid_geral">
 
     <!--Menu-->
-    <header id="cabecalho_menu" data-menu="cabecalho">
-        <a id="logo_menu" data-menu="logo" data-scroll-suave="logo"><img
-                src="imgs/simbolo_maji_menu.svg"></a>
+    <header id="cabecalho_menu_principal" data-menu="cabecalho">
+        <a id="logo_menu_principal" data-menu="logo" data-scroll-suave="logo"><img src="imgs/simbolo_maji_menu.svg"></a>
 
-        <span id="icone_menu" data-menu="icone"></span>
+        <span id="icone_menu_principal" data-menu="icone"></span>
 
-        <span id="separador_menu" data-menu="separador" ></span>
+        <span id="separador_menu_principal" data-menu="separador"></span>
 
-        <nav id="nav_menu" data-menu="nav" data-scroll-suave="nav">
+        <nav id="nav_menu_principal" data-menu="nav" data-scroll-suave="nav">
             <ul>
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#intro-portfolio">Portfólio</a></li>
@@ -80,9 +79,9 @@
     </header>
 
     <!--Início-->
-    <main id="inicio">
+    <main id="inicio" class="sessao_todas_col">
         <img id="logo_inicio" data-simbolo src="imgs/pag-principal/inicio/mobile_tablet_simbolo_maji_inicio.svg">
-        <p id="txt_inicio">
+        <p class="descricao_estudio">
             Maji é um estúdio de design.
             Construímos identidades visuais, websites, materiais de mídias sociais,
             impressos e editoriais. Agregando significado e valor para seus negócios.
@@ -90,49 +89,49 @@
     </main>
 
     <!--Serviços-->
-    <section id="servicos" data-sessao>
+    <section id="servicos" class="gap_top_bottom_sessoes sessao_col_2" data-sessao>
         <h1 class="titulo_sessao">Serviços</h1>
 
         <ul class="lista_itens">
             <li>
                 <img src="imgs/pag-principal/servicos/servico_identidade_visual_mock_up.jpg">
-                <h2>Identidade Visual</h2>
-                <p>Logo, paleta de cores, fontes,
+                <h2 class="titulo_item">Identidade Visual</h2>
+                <p class="descricao_servico">Logo, paleta de cores, fontes,
                     valores e conceitos de uma marca.</p>
             </li>
 
             <li>
                 <img src="imgs/pag-principal/servicos/servico_websites_mock_up.jpg">
-                <h2>Websites</h2>
-                <p>Plataforma digital para sua marca, serviços, portfólio, de maneira personalizada.</p>
+                <h2 class="titulo_item">Websites</h2>
+                <p class="descricao_servico">Plataforma digital para sua marca, serviços, portfólio, de maneira personalizada.</p>
             </li>
 
             <li>
                 <img src="imgs/pag-principal/servicos/servico_midias_sociais_mock_up.jpg">
-                <h2>Mídias Sociais</h2>
-                <p>Postagens para divulgação digital de sua marca.</p>
+                <h2 class="titulo_item">Mídias Sociais</h2>
+                <p class="descricao_servico">Postagens para divulgação digital de sua marca.</p>
             </li>
 
             <li>
                 <img src="imgs/pag-principal/servicos/servico_impressos_mock_up.jpg">
-                <h2>Impressos</h2>
-                <p>Materiais gráficos para impressão, flyers, banners, cartão de contatos.</p>
+                <h2 class="titulo_item">Impressos</h2>
+                <p class="descricao_servico">Materiais gráficos para impressão, flyers, banners, cartão de contatos.</p>
             </li>
 
             <li>
                 <img src="imgs/pag-principal/servicos/servico_editorial_mock_up.jpg">
-                <h2>Editorial</h2>
-                <p>Capas e diagramação de livros, apostilas, jornais, revistas.</p>
+                <h2 class="titulo_item">Editorial</h2>
+                <p class="descricao_servico">Capas e diagramação de livros, apostilas, jornais, revistas.</p>
             </li>
         </ul>
     </section>
 
     <!--Portfólio-->
-    <section id="intro-portfolio" data-sessao>
-        <div id="cabecalho">
+    <section id="intro-portfolio" class="gap_top_bottom_sessoes sessao_todas_col" data-sessao>
+        <div id="cabecalho_portfolio">
             <h1 class="titulo_sessao">Portfólio</h1>
-            <a class="ver_mais" href="./portfolio.html">
-                <h2>Ver mais</h2>
+            <a id="ver_mais" href="./portfolio.html">
+                <h2 class="ver_mais">Ver mais</h2>
                 <img class="arrow_diagonal" src="imgs/arrow_diagonal.svg">
             </a>
         </div>
@@ -142,21 +141,39 @@
                 <li class="slide_item" data-slide="item">
                     <img src="imgs/pag-principal/portfolio/portfolio_maji_design_thumbnail.jpg">
                     <div class="infos_item">
-                        <h3>Identidade Visual</h3>
+                        <ul class="tags_projeto">
+                            <li>
+                                <a href="#" id="tag_website">Website</a>
+                            </li>
+                            <li>
+                                <a href="#" id="tag_identidade_visual">Identidade Visual</a>
+                            </li>
+                        </ul>
                         <a href="./projeto_maji.html"><img class="arrow_diagonal" src="imgs/arrow_diagonal.svg"></a>
                     </div>
                 </li>
                 <li class="slide_item" data-slide="item">
                     <img src="imgs/pag-principal/portfolio/portfolio_amandla_thumbnail.jpg">
                     <div class="infos_item">
-                        <h3>Identidade Visual</h3>
+                        <ul class="tags_projeto">
+                            <li>
+                                <a href="#" id="tag_identidade_visual">Identidade Visual</a>
+                            </li>
+                        </ul>
                         <a href="./projeto_amandla.html"><img class="arrow_diagonal" src="imgs/arrow_diagonal.svg"></a>
                     </div>
                 </li>
                 <li class="slide_item" data-slide="item">
                     <img src="imgs/pag-principal/portfolio/portfolio_umbundu_thumbnail.jpg">
                     <div class="infos_item">
-                        <h3>Editorial</h3>
+                        <ul class="tags_projeto">
+                            <li>
+                                <a href="#" id="tag_editorial">Editorial</a>
+                            </li>
+                            <li>
+                                <a href="#" id="tag_identidade_visual">Identidade Visual</a>
+                            </li>
+                        </ul>
                         <a href="./projeto_umbundu.html"><img class="arrow_diagonal" src="imgs/arrow_diagonal.svg"></a>
                     </div>
                 </li>
@@ -170,12 +187,12 @@
     </section>
 
     <!--Sobre Maji-->
-    <section id="sobre_maji" data-sessao>
+    <section id="sobre_maji" class="gap_top_bottom_sessoes sessao_col_2" data-sessao>
         <h1 class="titulo_sessao">Sobre Maji</h1>
 
-        <div id="img_e_txt">
+        <div id="infos_sobre_maji">
             <img src="imgs/pag-principal/sobre-maji/simbolo_sobre_maji.svg">
-            <div id="txt_sobre_maji">
+            <div class="corpo_txt">
                 <p>Nos conhecemos em um grupo de estudos pan-africanista, no segundo semestre de 2020.</p>
                 <br>
                 <p>Certa vez, nesse grupo, foi falado sobre economia, e uma vez que se tivesse condições, essa renda
@@ -201,37 +218,39 @@
     </section>
 
     <!--Contatos-->
-    <section id="contatos" data-sessao>
+    <section id="contatos" class="gap_top_bottom_sessoes sessao_todas_col" data-sessao>
         <h1 class="titulo_sessao">Contatos</h1>
-        <div id="infos_contatos_col_1">
-            <h2>Entre em contato para fazermos um novo projeto juntos!</h2>
-            <ul>
-                <li>
-                    <img src="imgs/pag-principal/contatos/whatsapp.svg">
-                    <span><a href="tel:+5581987467542">(81) 9 8746-7542</a></span>
-                </li>
-                <li>
-                    <img src="imgs/pag-principal/contatos/whatsapp.svg">
-                    <span><a href="tel:+5561991128028">(61) 9 9112-8028</a></span>
-                </li>
-                <li>
-                    <img src="imgs/pag-principal/contatos/instagram.svg">
-                    <span><a href="#">@maji.design</a></span>
-                </li>
-                <li>
-                    <img src="imgs/pag-principal/contatos/email.svg">
-                    <span><a href="#">contato@maji.com</a></span>
-                </li>
-            </ul>
-        </div>
-        <div id="infos_contatos_col_2">
-            <h2>Através do QR Code abaixo entre em contato pelo whatsapp</h2>
-            <img src="imgs/pag-principal/contatos/qr_code_whatsapp.svg">
+        <div id="infos_contatos">
+            <div id="col_1_contatos">
+                <h2>Entre em contato para fazermos um novo projeto juntos!</h2>
+                <ul>
+                    <li>
+                        <img src="imgs/pag-principal/contatos/whatsapp.svg">
+                        <span><a href="tel:+5581987467542">(81) 9 8746-7542</a></span>
+                    </li>
+                    <li>
+                        <img src="imgs/pag-principal/contatos/whatsapp.svg">
+                        <span><a href="tel:+5561991128028">(61) 9 9112-8028</a></span>
+                    </li>
+                    <li>
+                        <img src="imgs/pag-principal/contatos/instagram.svg">
+                        <span><a href="#">@maji.design</a></span>
+                    </li>
+                    <li>
+                        <img src="imgs/pag-principal/contatos/email.svg">
+                        <span><a href="#">contato@maji.com</a></span>
+                    </li>
+                </ul>
+            </div>
+            <div id="col_2_contatos">
+                <h2>Através do QR Code abaixo entre em contato pelo whatsapp</h2>
+                <img src="imgs/pag-principal/contatos/qr_code_whatsapp.svg">
+            </div>
         </div>
     </section>
 
     <!--Rodapé-->
-    <footer id="rodape">
+    <footer id="rodape" class="sessao_todas_col">
         <a><img data-scroll-suave="logo" src="imgs/simbolo_rodape.svg"></a>
         <p>2023</p>
     </footer>
