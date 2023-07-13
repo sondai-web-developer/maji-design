@@ -23,5 +23,6 @@
 
 
 /*Projeto*/
+@import 'pag-projeto/visualizador.css';
 @import 'pag-projeto/cabecalho-menu-projeto.css';
 @import 'pag-projeto/projeto.css';
