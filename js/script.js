@@ -23,6 +23,8 @@ simboloInicio();
 
 
 /*Pag Projeto*/
+import slideVisualizador from './funcoes/pag-projeto/slide-visualizador.js';
 import projetoAtual from './funcoes/pag-projeto/projeto-atual.js';
 
+slideVisualizador();
 projetoAtual();
