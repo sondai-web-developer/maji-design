@@ -5,7 +5,7 @@ export default function slideVisualizador() {
     const imgsApresentacao = document.querySelectorAll('[data-apresentacao] li');
     const btnFechar = document.querySelector('[data-visualizador="btnFechar"]');
     const visualizador = document.querySelector('[data-visualizador="visualizador"]');
-    const eventos = ['touchstart', 'click'];
+    const eventos = ['touchend', 'click'];
 
     const wrapper = document.querySelector('[data-visualizador="wrapper"]');
     const lista = document.querySelector('[data-visualizador="lista"]');
