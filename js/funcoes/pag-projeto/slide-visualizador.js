@@ -207,7 +207,7 @@ export default function slideVisualizador() {
             visualizador.addEventListener(evento, fecharAltVisualizador);
         });*/
         imgsApresentacao.forEach(img => {
-            img.addEventListener('touchend', abrirVisualizador);
+            setTimeout(() => img.addEventListener('touchend', abrirVisualizador));
         });
         btnFechar.addEventListener('touchstart', fecharVisualizador);
         visualizador.addEventListener('touchstart', fecharAltVisualizador);
