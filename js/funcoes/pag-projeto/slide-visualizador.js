@@ -258,7 +258,7 @@ export default function slideVisualizador() {
     }
 
     function init() {
-        if (imgsApresentacao) {
+        if (imgsApresentacao && lista) {
             transition(true);
             addSlidesIds();
             addVisualizadorEvents();
