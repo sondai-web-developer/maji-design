@@ -5,7 +5,7 @@ export default function slideVisualizador() {
     const imgsApresentacao = document.querySelectorAll('[data-apresentacao] li');
     const btnFechar = document.querySelector('[data-visualizador="btnFechar"]');
     const visualizador = document.querySelector('[data-visualizador="visualizador"]');
-    const eventos = ['touchend', 'click'];
+    /*const eventos = ['touchend', 'click'];*/
 
     const wrapper = document.querySelector('[data-visualizador="wrapper"]');
     const lista = document.querySelector('[data-visualizador="lista"]');
@@ -199,13 +199,18 @@ export default function slideVisualizador() {
     }
 
     function addVisualizadorEvents() {
-        eventos.forEach(evento => {
+        /*eventos.forEach(evento => {
             imgsApresentacao.forEach(img => {
                 img.addEventListener(evento, abrirVisualizador);
             });
             btnFechar.addEventListener(evento, fecharVisualizador);
             visualizador.addEventListener(evento, fecharAltVisualizador);
+        });*/
+        imgsApresentacao.forEach(img => {
+            img.addEventListener('touchend', abrirVisualizador);
         });
+        btnFechar.addEventListener('touchstart', fecharVisualizador);
+        visualizador.addEventListener('touchstart', fecharAltVisualizador);
     }
 
     // Navegação
