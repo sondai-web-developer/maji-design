@@ -5,7 +5,7 @@ export default function slideVisualizador() {
     const imgsApresentacao = document.querySelectorAll('[data-apresentacao] li');
     const btnFechar = document.querySelector('[data-visualizador="btnFechar"]');
     const visualizador = document.querySelector('[data-visualizador="visualizador"]');
-    /*const eventos = ['touchend', 'click'];*/
+    const eventos = ['touchend', 'click'];
 
     const wrapper = document.querySelector('[data-visualizador="wrapper"]');
     const lista = document.querySelector('[data-visualizador="lista"]');
@@ -27,6 +27,9 @@ export default function slideVisualizador() {
 
     const prevElement = document.querySelector('[data-visualizador="prev"]');
     const nextElement = document.querySelector('[data-visualizador="next"]');
+
+    let touchStartY;
+    let isScrolling;
 
     function transition(active) {
         lista.style.transition = active ? 'transform .3s' : '';
@@ -161,7 +164,40 @@ export default function slideVisualizador() {
         });
     }
 
+    function teste1(event) {
+        touchStartY = event.touches[0].clientY;
+        isScrolling = false;
+    }
+
+    function teste2(event) {
+        if (Math.abs(event.touches[0].clientY - touchStartY) > 10) {
+            isScrolling = true;
+        }
+    }
+
+    /*function teste3() {
+        if (isScrolling) {
+            isScrolling = false;
+            return;
+        }
+        abrirVisualizador();
+    }*/
+
+    function handleScrolling() {
+        imgsApresentacao.forEach((img) => {
+            img.addEventListener('touchstart', teste1);
+            img.addEventListener('touchmove', teste2);
+            eventos.forEach((evento) => {
+                img.addEventListener(evento, abrirVisualizador);
+            });
+        });
+    }
+
     function abrirVisualizador(event) {
+        if (isScrolling) {
+            isScrolling = false;
+            return;
+        }
         visualizador.classList.add('exibirVisualizador');
         setTimeout(() => {
             lista.style.transition = '.3s';
@@ -199,18 +235,13 @@ export default function slideVisualizador() {
     }
 
     function addVisualizadorEvents() {
-        /*eventos.forEach(evento => {
-            imgsApresentacao.forEach(img => {
+        eventos.forEach(evento => {
+            /*imgsApresentacao.forEach(img => {
                 img.addEventListener(evento, abrirVisualizador);
-            });
+            });*/
             btnFechar.addEventListener(evento, fecharVisualizador);
             visualizador.addEventListener(evento, fecharAltVisualizador);
-        });*/
-        imgsApresentacao.forEach(img => {
-            setTimeout(() => img.addEventListener('touchend', abrirVisualizador));
         });
-        btnFechar.addEventListener('touchstart', fecharVisualizador);
-        visualizador.addEventListener('touchstart', fecharAltVisualizador);
     }
 
     // Navegação
@@ -267,6 +298,7 @@ export default function slideVisualizador() {
             transition(true);
             addSlidesIds();
             addVisualizadorEvents();
+            handleScrolling();
             slidesConfig();
         }
     }
