@@ -141,6 +141,14 @@
     top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    transition: .3s;
+}
+
+@media (min-width:628px){
+    #paginacao_visualizador{
+        top:97%;
+    }
 }
 
 #paginacao_visualizador li a {
