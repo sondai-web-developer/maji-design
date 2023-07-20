@@ -164,29 +164,21 @@ export default function slideVisualizador() {
         });
     }
 
-    function teste1(event) {
+    function identificandoTouch(event) {
         touchStartY = event.touches[0].clientY;
         isScrolling = false;
     }
 
-    function teste2(event) {
+    function identificandoTouchNasImgs(event) {
         if (Math.abs(event.touches[0].clientY - touchStartY) > 10) {
             isScrolling = true;
         }
     }
 
-    /*function teste3() {
-        if (isScrolling) {
-            isScrolling = false;
-            return;
-        }
-        abrirVisualizador();
-    }*/
-
     function handleScrolling() {
         imgsApresentacao.forEach((img) => {
-            img.addEventListener('touchstart', teste1);
-            img.addEventListener('touchmove', teste2);
+            img.addEventListener('touchstart', identificandoTouch);
+            img.addEventListener('touchmove', identificandoTouchNasImgs);
             eventos.forEach((evento) => {
                 img.addEventListener(evento, abrirVisualizador);
             });
@@ -236,9 +228,6 @@ export default function slideVisualizador() {
 
     function addVisualizadorEvents() {
         eventos.forEach(evento => {
-            /*imgsApresentacao.forEach(img => {
-                img.addEventListener(evento, abrirVisualizador);
-            });*/
             btnFechar.addEventListener(evento, fecharVisualizador);
             visualizador.addEventListener(evento, fecharAltVisualizador);
         });
